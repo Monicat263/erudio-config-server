@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: greeting-service
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      import-check:
+        enabled: false
+greeting-service: # Este bloco está no mesmo nível de spring
+  greeting: "Hello"
+  default-value: "World"
